@@ -10,73 +10,85 @@
 </head>
 
 <body>
-    <!--barra de navegacion-->
-    <header id="header">
-            <nav class="nav">
-            <ul class="menu">
-                <!--logo-->
-                <li>
-                    <img class="logoWeb" src="./img/logo.png" alt="logo web">
-                </li>
+  <!--barra de navegacion-->
+  <header>
+    <nav class="navbar sticky-top navbar-light bg-light navbar-expand-sm">
+        <div class="container-fluid">
+
+            <a class="navbar-brand">
+                <img class="logoWeb" src="../img/logo.png" alt="logo web">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav">
                 <!--home-->
                 <li>
-                    <a class="seccionActual">HOME</a>
+                  <a class="nav-item nav-link seccionActual" href="../index.html" >HOME</a>
                 </li>
                 <!--reseñas-->
                 <li>
-                    <a class="seccion" href="./pages/reseñas.html">RESEÑAS</a>
+                  <a class="nav-item nav-link seccion" href="./pages/reseñas.html">RESEÑAS</a>
                 </li>
                 <!--top 10-->
                 <li>
-                    <a class="seccion" href="./pages/top 10.html">TOP 10</a>
+                  <a class="nav-item nav-link seccion" href="./pages/top 10.html">TOP10</a>
                 </li>
+              </ul>
+            </div>
+
+        </div>
+    </nav>
+  </header>
+
+  <main class="margenes">
+
+    <!--inicio de pagina-->
+      <section class="inicio">
+
+          <div class="titulo">
+            <h1 class="tituloPrincipal">Todo sobre los libros</h1>
+          </div>
+
+          <div class="libro">
+              <img class="libroHome" src="./img/libro_principito.jpg" alt="foto libro">
+          </div>
+
+          <div class="detalle">
+            <ul class="lista">
+              <li>
+                <p class="etiqueta">LIBRO DE HOY:</p>
+              </li>
+              <li>
+                <p class="textoDetalle">El Principito</p>
+              </li>
+              <li>
+                <p class="etiqueta">AUTOR/A:</p>
+              </li>
+              <li>
+                <p class="textoDetalle">A.Saint-Exupéry</p>
+              </li>
+              <li>
+                <p class="etiqueta">PUNTAJE:</p>
+              </li>
+              <li>
+                <p class="textoDetalle">9/10 puntos</p>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
 
-    <main class="margenes">
-
-        <!--libros destacados-->
-        <section class="inicio">
-            <div class="titulo">
-                <h1 class="tituloPrincipal">Todo sobre los libros</h1>
-            </div>
-            <div class="libro">
-                <img class="libroDestacado" src="./img/libro_principito.jpg" alt="foto libro">
-            </div>
-            <div class="detalle">
-                <ul class="lista">
-                <li>
-                    <p class="etiqueta">LIBRO DE HOY:</p>
-                    </li>
-                    <li>
-                    <p class="textoDetalle">El Principito</p>
-                </li>
-                <li>
-                    <p class="etiqueta">AUTOR/A:</p>
-                    </li>
-                <li>
-                    <p class="textoDetalle">A.Saint-Exupéry</p>
-                </li>
-                <li>
-                    <p class="etiqueta">PUNTAJE:</p>
-                    </li>
-                    <li>
-                    <p class="textoDetalle">9/10 puntos</p>
-                </li>
-                
-            </ul>
-        </section>
+      </section>
 
 
-        <!--grilla de libros-->
-    
-    <section>    
-       <div class="seccionGrilla">
-            <h2 class="subtitulo">Nuestra selección</h2>
-            <div class="textoGrill">
-            <p class="texto">Publicamos sobre ficción nacional y extranjera, no ficción, novelas, biografías, cómics y más libros</p>
-            </div>
+    <!--grilla de libros-->
+      <section>    
+        <div class="seccionGrilla">
+          <h2 class="subtitulo">Nuestra selección</h2>
+          <div class="textoGrill">
+          <p class="texto">Publicamos sobre ficción nacional y extranjera, no ficción, novelas, biografías, cómics y más libros</p>
+          </div>
         </div>
 
         <article class="grilla">
@@ -129,79 +141,141 @@
         </article>
     </section>
        
-    </main>
+  </main>
 
-        <!--grilla de datos-->
-        <section class="containerDatos"> 
+  <!--grilla de datos-->
+    <seccion class="containerD text-center">
+        <div class="row">
 
-            <div class="uno">
-                <img class="fitLibrosBiblioteca" src="./img/librosBiblioteca.jpg" alt="libros abiertos">            
+            <div class="grillaFotoMacro d-none d-md-block col-md-3">
+                <img class="fotoImagenH" src="./img/librosBiblioteca.jpg" alt=""> 
             </div>
 
-            <div class="dos">
-                <div class="textoGrillaD">
-                <h3>AUTOR DEL DIA</h3>
-                <p class="textoChico">Conocé sobre la vida de Herman Melville</p>
-                </div>
-                <div class="boton">
-                    <a class="textoBoton" href="">DESCUBRÍ</a>
-                    <img class="flechaDescubri" src="./img/flechaBoton.png" alt="icono flecha">
-                </div>
-            </div>
-            
-            <div class="tres">
-                <img class="fitLibrosAbiertos" src="./img/librosAbiertos.jpg" alt="libros abiertos">
-            </div>
+            <div class="grillaDatosMacro col-xs-12 col-md-9">
+              
+                <div class="row">
+                    <div class="grillaDatos col-xs-1 col-md-4">
+                        <div class="textoGrillaD">
+                            <div>
+                                <h3 class="tituloDatosIndex">AUTOR DEL DIA</h3>
+                                <p class="textoChicoIndex">Conocé sobre la vida de Herman Melville</p>
+                            </div>
+                            <div class="boton">
+                                <a class="textoBotonIndex" href="">DESCUBRÍ</a>
+                                <img class="flechaDescubri" src="./img/flechaBoton.png" alt="icono flecha">
+                            </div>
+                        </div>
+                    </div>
 
-                        
-            <div class="cinco">
-                <div class="textoGrillaD">
-                <h3>SOBRE NOSOTROS</h3>
-                <p class="textoChico">Te contamos sobre las metas que tiene este sitio</p>
+                    <div class="grillaDatos d-none d-md-block col-md-8">
+                        <img class="fotoImagenH" src="./img/librosAbiertos.jpg" alt="">
+                    </div>
+
                 </div>
-               <div class="boton">
-                    <a class="textoBoton" href="">DESCUBRÍ</a>
-                    <img class="flechaDescubri" src="./img/flechaBoton.png" alt="icono flecha">
+                
+                <div class="row">
+                    <div class="grillaDatos d-none d-md-block col-md-4">
+                              
+                    </div>
+                                
+                    <div class="grillaDatos col-xs-1 col-md-4">
+                        <div class="textoGrillaD">
+                            <div>
+                                <h3 class="tituloDatosIndex">SOBRE NOSOTROS</h3>
+                                <p class="textoChicoIndex">Te contamos sobre las metas que tiene este sitio</p>
+                            </div>
+                                
+                            <div class="boton">
+                                <a class="textoBotonIndex" href="">DESCUBRÍ</a>
+                                <img class="flechaDescubri" src="./img/flechaBoton.png" alt="icono flecha">
+                            </div>
+                        </div>
+                    </div>
+                                
+
+                    <div class="grillaDatos col-xs-1 col-md-4">
+                        <div class="textoGrillaD">
+                            <div>
+                                <h3 class="tituloDatosIndex">COLECCIÓN</h3>
+                                <p class="textoChicoIndex">Te contamos sobre las metas que tiene este sitio</p>
+                            </div>
+                            <div class="boton">
+                                <a class="textoBotonIndex" href="">DESCUBRÍ</a>
+                                <img class="flechaDescubri" src="./img/flechaBoton.png" alt="icono flecha">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
-            
-             <div class="seis">
-                <div class="textoGrillaD">
-                <h3>COLECCIÓN</h3>
-                <p class="textoChico">Te contamos sobre las metas que tiene este sitio</p>
-                </div>
-                <div class="boton">
-                    <a class="textoBoton" href="">DESCUBRÍ</a>
-                    <img class="flechaDescubri" src="./img/flechaBoton.png" alt="icono flecha">
-                </div>
-             </div>
-        </section> 
+                      
+                  
+        </div>
+    </seccion>
     
 
 
-    <!--footer-->
-    <footer class="footerC">
-        <div class="interiorFooter">
-            <h4>CONTACTANOS</h4>
-            <p class="textoChicoB">Texto textotexto texto texto textotexto texto de textotexto texto texto textotexto texto de</p>
-        </div>
+  <!--footer-->
+  <footer class="bg-dark text-center text-lg-start text-white">
+      <div class="container p-4">
 
-        <div class="interiorFooter">
-            <p class="textoChicoSolo">Texto textotexto texto texto textotexto texto de textotexto texto texto textotexto texto de</p>
-        </div>
-               
-        <div class="interiorFooter">
-            <h4>NEWSLETTER</h4>
-            <p class="textoChicoB">Texto textotexto texto texto textotexto texto de textotexto texto texto textotexto texto de</p>
-        </div>
+          <div class="row mt-4">
 
-        <div class="interiorFooter">
-            <p class="textoChicoSolo">Texto textotexto texto texto textotexto texto de textotexto texto texto textotexto texto de</p>
-        </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="subtituloF">CONTACTÁNOS</h5>
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="fas fa-book fa-fw fa-sm me-2"></i>Teléfono: 1134445566</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="fas fa-book fa-fw fa-sm me-2"></i>Email: email@gmail.com</a>
+                    </li>
+                  </ul>
+              </div>
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="subtituloF">REDES</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Instagram: @instagram</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Twitter: twitter.com</a>
+                    </li>
+                  </ul>
+              </div>
+       
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="subtituloF">NEWSLETTER</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!" class="textoChicoF">Contactate acá para ser parte y enterarte de las novedades.</a>
+                    </li>
+                  </ul>
+              </div>
+         
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="subtituloF">MÁS DE NOSOTROS</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="fas fa-at fa-fw fa-sm me-2"></i>Ética laboral</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Fuentes e ideas</a>
+                    </li>
+                  </ul>
+              </div>
+          
+          </div>
 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+      </div>
+  </footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+
 </body>
+
 </html>
 
 

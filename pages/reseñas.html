@@ -10,32 +10,41 @@
 </head>
 <body>
     <!--barra de navegacion-->
-    <header id="header">
-        <nav class="nav">
-        <ul class="menu">
-            <!--logo-->
-            <li>
-                <img class="logoWeb" src="../img/logo.png" alt="logo web">
-            </li>
-            <!--home-->
-            <li>
-                <a class="seccion" href="../index.html" >HOME</a>
-            </li>
-            <!--reseñas-->
-            <li>
-                <a class="seccionActual" href="./reseñas.html">RESEÑAS</a>
-            </li>
-            <!--top 10-->
-            <li>
-                <a class="seccion" href="./top 10.html">TOP 10</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar sticky-top navbar-light bg-light navbar-expand-sm">
+            <div class="container-fluid">
+    
+                <a class="navbar-brand">
+                    <img class="logoWeb" src="../img/logo.png" alt="logo web">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="menu">
+                  <ul class="navbar-nav">
+                    <!--home-->
+                    <li>
+                      <a class="nav-item nav-link seccion" href="../index.html" >HOME</a>
+                    </li>
+                    <!--reseñas-->
+                    <li>
+                      <a class="nav-item nav-link seccionActual" href="./reseñas.html">RESEÑAS</a>
+                    </li>
+                    <!--top 10-->
+                    <li>
+                      <a class="nav-item nav-link seccion" href="./top 10.html">TOP10</a>
+                    </li>
+                  </ul>
+                </div>
+    
+            </div>
+        </nav>
+    </header>
 
-    <main class="margenes">
-        <!--titulo reseñas-->
-        <section class="grillaInicioReseñas">
+<main class="margenes">
+    <!--titulo reseñas-->
+    <section class="grillaInicioReseñas">
             <div class="libroReseña1">
                 <img class="libroReseñaChico" src="../img/libro_emma.webp" alt="libro">
             </div>
@@ -52,165 +61,199 @@
             <div class="libroReseña5">
                 <img class="libroReseñaChico" src="../img/libro_principito.jpg" alt="libro">
             </div>
-        </section>
+    </section>
 
 
-<section>
+    <section>
         
-        <!--detalle libro-->
-        <article class="reseña1">
+      <!--detalle libro-->
+      <article class="reseña1">
             
-            <div class="grillaReseñaInterior">
+        <div class="grillaReseñaInterior">
                 
-                <div class="card text-bg-dark">
-                    <img src="../img/libro_orgulloyprejuicio.jpeg" class="card-img" alt="libro Orgullo y Prejuicio">
-                    <div class="card-img-overlay">
+            <div class="card text-bg-dark">
+                <img src="../img/libro_orgulloyprejuicio.jpeg" class="card-img-reseñas" alt="libro Orgullo y Prejuicio">
+                <div class="card-img-overlay">
+                    <div class="datosReseña">
+                      <h5 class="card-title">CATEGORÍA</h5>
+                      <p class="card-text">Novela</p>
+                      <h5 class="card-title">AÑO DE PUBLICACIÓN</h5>
+                      <p class="card-text">1909</p>
+                      <h5 class="card-title">PUNTAJE</h5>
+                      <p class="card-text">7/10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tituloReseña">
+                <h2 class="tituloLight">
+                    Orgullo y prejuicio
+                </h2>
+            </div>
+
+            <div class="textoReseña">
+                <p class="textoBold">Es la más famosa de las novelas de Jane Austen y una de las primeras comedias románticas en la historia de la novela.</p>
+                <p class="texto"> Es una novela de desarrollo personal, en la que las dos figuras principales, Elizabeth Bennet y Fitzwilliam Darcy, cada uno a su manera y, no obstante, de forma muy parecida, deben madurar para superar algunas crisis y aprender de sus errores para poder encarar el futuro en común, superando el orgullo de clase de Darcy y los prejuicios de Elizabeth hacia él.</p>
+            </div>
+        </div>
+      </article>
+
+      <!--detalle libro-->
+      <article class="reseña2">
+            
+        <div class="grillaReseñaInterior">
+                
+            <div class="card text-bg-dark">
+                <img src="../img/libro_amorcolera.jpg" class="card-img-reseñas" alt="libro amor en tiempos de cólera">
+                <div class="card-img-overlay">
+                    <div class="datosReseña">
+                      <h5 class="card-title">CATEGORÍA</h5>
+                      <p class="card-text">Novela</p>
+                      <h5 class="card-title">AÑO DE PUBLICACIÓN</h5>
+                      <p class="card-text">1985</p>
+                      <h5 class="card-title">PUNTAJE</h5>
+                      <p class="card-text">5/10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tituloReseña">
+                <h2 class="tituloLight">
+                    El amor en los tiempos de cólera
+                </h2>
+            </div>
+
+            <div class="textoReseña">
+                <p class="textoBold">Es una novela dedicada al verdadero amor que perdura y supera las adversidades toda una vida. Es un homenaje al amor, las aventuras, el tiempo, la vejez y la muerte.​</p>
+                <p class="texto"> Cuando el refugiado de guerra antillano Jeremiah de Saint-Amour se suicida con un sahumerio de cianuro de oro, el doctor Juvenal Urbino atiende su caso (uno que creía perdido) y se asombra al saber que es el primer suicidio, en muchos años, no llevado a cabo por razones tan justificadas como el amor.</p>
+            </div>
+        </div>
+      </article>
+
+      <!--detalle libro-->
+      <article class="reseña3">
+            
+        <div class="grillaReseñaInterior">
+                
+            <div class="card text-bg-dark">
+                <img src="../img/libro_alicia.jpg" class="card-img-reseñas" alt="libro Alicia en el país de las maravillas">
+                <div class="card-img-overlay">
                     <div class="datosReseña">
                       <h5 class="card-title">Categoría</h5>
-                      <p class="card-text">Novela novela</p>
-                      <h5 class="card-title">Categoría</h5>
-                      <p class="card-text">Novela novela</p>
-                      <h5 class="card-title">Categoría</h5>
-                      <p class="card-text">Novela novela</p>
+                      <p class="card-text">Novela</p>
+                      <h5 class="card-title">Año de publicación</h5>
+                      <p class="card-text">1865</p>
+                      <h5 class="card-title">Puntaje</h5>
+                      <p class="card-text">8/10</p>
                     </div>
-                    </div>
-                </div>
-
-                <div class="tituloReseña">
-                <h2 class="tituloLight">
-                    Orgullo y prejuicio
-                </h2>
-                </div>
-
-                <div class="textoReseña">
-                <p class="textoBold">Es la más famosa de las novelas de Jane Austen y una de las primeras comedias románticas en la historia de la novela.</p>
-                <p class="texto"> Es una novela de desarrollo personal, en la que las dos figuras principales, Elizabeth Bennet y Fitzwilliam Darcy, cada uno a su manera y, no obstante, de forma muy parecida, deben madurar para superar algunas crisis y aprender de sus errores para poder encarar el futuro en común, superando el orgullo de clase de Darcy y los prejuicios de Elizabeth hacia él.</p>
                 </div>
             </div>
-        </article>
 
-        <!--detalle libro-->
-        <article class="reseña2">
-            
-            <div class="grillaReseñaInterior">
-                
-                <div class="card text-bg-dark">
-                    <img src="../img/libro_orgulloyprejuicio.jpeg" class="card-img" alt="libro Orgullo y Prejuicio">
-                    <div class="card-img-overlay">
-                        <div class="datosReseña">
-                            <h5 class="card-title">Categoría</h5>
-                            <p class="card-text">Novela novela</p>
-                            <h5 class="card-title">Categoría</h5>
-                            <p class="card-text">Novela novela</p>
-                            <h5 class="card-title">Categoría</h5>
-                            <p class="card-text">Novela novela</p>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="tituloReseña">
+            <div class="tituloReseña">
                 <h2 class="tituloLight">
-                    Orgullo y prejuicio
+                    Alicia en el país de las maravillas: Através del espejo
                 </h2>
-                </div>
-
-                <div class="textoReseña">
-                <p class="textoBold">Es la más famosa de las novelas de Jane Austen y una de las primeras comedias románticas en la historia de la novela.</p>
-                <p class="texto"> Es una novela de desarrollo personal, en la que las dos figuras principales, Elizabeth Bennet y Fitzwilliam Darcy, cada uno a su manera y, no obstante, de forma muy parecida, deben madurar para superar algunas crisis y aprender de sus errores para poder encarar el futuro en común, superando el orgullo de clase de Darcy y los prejuicios de Elizabeth hacia él.</p>
-                </div>
             </div>
-        </article>
 
-        <!--detalle libro-->
-        <article class="reseña3">
-            
-            <div class="grillaReseñaInterior">
-                
-                <div class="card text-bg-dark">
-                    <img src="../img/libro_orgulloyprejuicio.jpeg" class="card-img" alt="libro Orgullo y Prejuicio">
-                    <div class="card-img-overlay">
-                        <div class="datosReseña">
-                            <h5 class="card-title">Categoría</h5>
-                            <p class="card-text">Novela novela</p>
-                            <h5 class="card-title">Categoría</h5>
-                            <p class="card-text">Novela novela</p>
-                            <h5 class="card-title">Categoría</h5>
-                            <p class="card-text">Novela novela</p>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="tituloReseña">
-                <h2 class="tituloLight">
-                    Orgullo y prejuicio
-                </h2>
-                </div>
-
-                <div class="textoReseña">
-                <p class="textoBold">Es la más famosa de las novelas de Jane Austen y una de las primeras comedias románticas en la historia de la novela.</p>
-                <p class="texto"> Es una novela de desarrollo personal, en la que las dos figuras principales, Elizabeth Bennet y Fitzwilliam Darcy, cada uno a su manera y, no obstante, de forma muy parecida, deben madurar para superar algunas crisis y aprender de sus errores para poder encarar el futuro en común, superando el orgullo de clase de Darcy y los prejuicios de Elizabeth hacia él.</p>
-                </div>
+            <div class="textoReseña">
+                <p class="textoBold">Alicia ha sido identificada como un ícono cultural. Se la ha descrito como una desviación del habitual protagonista infantil del siglo xix.</p>
+                <p class="texto">  Una niña de mediados de la época victoriana, Alicia vive una aventura subterránea tras caer accidentalmente a través de la madriguera de un conejo al País de las Maravillas; en la secuela, ella camina a través de un espejo hacia un mundo alternativo.</p>
             </div>
-        </article>
+        </div>
+      </article>
 
         
     </section>
         
-
-
-    
-
     <!--formulario-->
     <section class="grillaFormulario">
+        
         <h2 class="tituloFormulario" >
             Recibí las reseñas primero
         </h2>
+        
         <img class="imagenFormulario" src="../img/Hand holding smartphones with online newspaper, newsletter [Convertido]-01-01.png" alt="foto newsletter">
+        
         <form class="formulario">
+            
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">NOMBRE</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-             
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">EMAIL</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-              </div>
+              <label for="exampleInputEmail1" class="form-label">EMAIL</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
             
-              <div class="botonForm">
+            <div class="botonForm">
                 <a class="textoBoton" href="">ENVIAR</a>
                 <img class="flechaDescubri" src="../img/flechaBoton.png" alt="icono flecha">
             </div>
+
           </form>
+
     </section>
 
 </main>
+
     
-<!--footer-->
-<footer class="footerC">
-    
-    <div class="interiorFooter">
-        <h4>CONTACTANOS</h4>
-        <p class="textoChicoB">Texto textotexto texto texto textotexto texto de textotexto texto texto textotexto texto de</p>
-    </div>
+  <!--footer-->
+  <footer class="bg-dark text-center text-lg-start text-white">
+    <div class="container p-4">
 
-    <div class="interiorFooter">
-        <p class="textoChicoSolo">Texto textotexto texto texto textotexto texto de textotexto texto texto textotexto texto de</p>
-    </div>
-           
-    <div class="interiorFooter">
-        <h4>NEWSLETTER</h4>
-        <p class="textoChicoB">Texto textotexto texto texto textotexto texto de textotexto texto texto textotexto texto de</p>
-    </div>
+        <div class="row mt-4">
 
-    <div class="interiorFooter">
-        <p class="textoChicoSolo">Texto textotexto texto texto textotexto texto de textotexto texto texto textotexto texto de</p>
-    </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="subtituloF">CONTACTÁNOS</h5>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="textoChicoF"><i class="fas fa-book fa-fw fa-sm me-2"></i>Teléfono: 1134445566</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="textoChicoF"><i class="fas fa-book fa-fw fa-sm me-2"></i>Email: email@gmail.com</a>
+                  </li>
+                </ul>
+            </div>
+        
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="subtituloF">REDES</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="textoChicoF"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Instagram: @instagram</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="textoChicoF"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Twitter: twitter.com</a>
+                  </li>
+                </ul>
+            </div>
+     
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="subtituloF">NEWSLETTER</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="textoChicoF">Contactate acá para ser parte y enterarte de las novedades.</a>
+                  </li>
+                </ul>
+            </div>
+       
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="subtituloF">MÁS DE NOSOTROS</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="textoChicoF"><i class="fas fa-at fa-fw fa-sm me-2"></i>Ética laboral</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="textoChicoF"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Fuentes e ideas</a>
+                  </li>
+                </ul>
+            </div>
+        
+        </div>
 
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
-
 </body>
 </html>
